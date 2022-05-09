@@ -1,0 +1,75 @@
+{
+    "source": "mockoon:1.17.0",
+    "data": [
+        {
+            "type": "environment",
+            "item": {
+                "uuid": "1c25ca77-0211-42f0-ba93-660caeb5a664",
+                "lastMigration": 19,
+                "name": "Flutter test",
+                "endpointPrefix": "",
+                "latency": 0,
+                "port": 3000,
+                "hostname": "0.0.0.0",
+                "routes": [
+                    {
+                        "uuid": "ea9e1e7d-2bb6-4770-a28f-046f7c73baeb",
+                        "documentation": "",
+                        "method": "post",
+                        "endpoint": "products",
+                        "responses": [
+                            {
+                                "uuid": "14f4e51a-f028-4fee-8561-6b907d0d850e",
+                                "body": "{\n\"status\" : \"sucess\",\n\"message\" : \"success\",\n\"data\" : {\n  \"id\" : \"001\",\n  \"name\" : \"Shampoo\",\n  \"productPrice\" : 8000,\n  \"stock\" : 5\n  }\n}",
+                                "latency": 0,
+                                "statusCode": 200,
+                                "label": "",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false,
+                                "fallbackTo404": false
+                            }
+                        ],
+                        "enabled": true,
+                        "randomResponse": false,
+                        "sequentialResponse": false
+                    }
+                ],
+                "proxyMode": false,
+                "proxyHost": "",
+                "proxyRemovePrefix": false,
+                "tlsOptions": {
+                    "enabled": false,
+                    "type": "CERT",
+                    "pfxPath": "",
+                    "certPath": "",
+                    "keyPath": "",
+                    "caPath": "",
+                    "passphrase": ""
+                },
+                "cors": true,
+                "headers": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "proxyReqHeaders": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "proxyResHeaders": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ]
+            }
+        }
+    ]
+}
