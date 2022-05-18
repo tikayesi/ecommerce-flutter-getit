@@ -2,6 +2,7 @@ import 'package:flutter_proj/data/api/api_helper.dart';
 import 'package:flutter_proj/data/api/api_path.dart';
 import 'package:flutter_proj/data/repository/product_repo.dart';
 import 'package:flutter_proj/model/product.dart';
+import 'package:flutter_proj/model/product_response.dart';
 
 class ProductRepoApiImpl implements ProductRepo{
 
@@ -21,9 +22,10 @@ class ProductRepoApiImpl implements ProductRepo{
   }
 
   @override
-  Future<List<Product>> getProducts() async {
+  Future<List<dynamic>> getProducts() async {
     final result = await apiHelper.getData(products);
-    return result.data;
+    print('Ress');
+    print(result.data);
+    return ProductResponse.fromList(result.data).products;
   }
-
 }
