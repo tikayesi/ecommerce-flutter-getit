@@ -81,6 +81,8 @@ class _ProductScreenState extends State<ProductScreen> {
                                       productPrice: int.parse(priceController.text),
                                       stock: int.parse(stockController.text)));
                         });
+                        Navigator.pop(context);
+
                       }, child: const Text('Submit'))
                     ],
                   ),

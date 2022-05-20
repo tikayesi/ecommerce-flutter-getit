@@ -31,31 +31,6 @@
       "enabled": true,
       "randomResponse": false,
       "sequentialResponse": false
-    },
-    {
-      "uuid": "4cc36b19-625e-430a-9df3-ecda26f2e1f2",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "products",
-      "responses": [
-        {
-          "uuid": "5326d0bf-babe-4027-aac4-e128038587c2",
-          "body": "{\n\"status\" : \"sucess\",\n\"message\" : \"success\",\n\"data\" : [{\n  \"id\" : \"001\",\n  \"name\" : \"Shampoo\",\n  \"productPrice\" : 8000,\n  \"stock\" : 5\n  },\n  {\n  \"id\" : \"002\",\n  \"name\" : \"Shabun\",\n  \"productPrice\" : 5000,\n  \"stock\" : 10\n  }]\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false
-        }
-      ],
-      "enabled": true,
-      "randomResponse": false,
-      "sequentialResponse": false
     }
   ],
   "proxyMode": false,

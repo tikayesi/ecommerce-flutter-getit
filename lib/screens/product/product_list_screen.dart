@@ -22,7 +22,7 @@ class _ProductListState extends State<ProductList> {
   }
 
   _getListProduct()async{
-    listProduct = (await _productViewModel.onGetProducts())!;
+    listProduct = await _productViewModel.onGetProducts() ?? [];
     setState(() {
     listProduct = listProduct;
     });
@@ -60,6 +60,9 @@ class _ProductListState extends State<ProductList> {
 
               )),
           ),
+          ElevatedButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const ProductScreen()));
+          }, child: Text('Tambah Produk'))
           // );
         ],
       ),
